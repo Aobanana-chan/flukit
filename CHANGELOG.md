@@ -1,3 +1,6 @@
+## [2.0.1 stable]
+- adapt to flutter3.0.1
+- upgrade gradle to 7.3.1
 ## [2.0.0 stable]
 - 2.0 first stable version
 ## [2.0.0-beta5]

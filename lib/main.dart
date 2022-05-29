@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:flukit/flukit.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart' hide Page;
 import 'package:flukit/example/example.dart';
 
@@ -37,7 +36,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
-      final routesMap= mapRoutes(getRoutes());
+      final routesMap = mapRoutes(getRoutes());
       final maxWidth = min(constraints.maxWidth, 500.0);
       return UnconstrainedBox(
         child: ConstrainedBox(
@@ -68,7 +67,6 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-
   const MyHomePage({
     Key? key,
     required this.title,
@@ -81,8 +79,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 //防止热更新失效，我们不定义为静态变量
-List<Page> getRoutes(){
-  return  [
+List<Page> getRoutes() {
+  return [
     Page("AfterLayout", const AfterLayoutRoute(), showLog: true),
     Page(
       "AccurateSizedBox",
@@ -112,7 +110,7 @@ List<Page> getRoutes(){
     ),
     Page("PullRefresh", const PullRefreshRoute(), padding: false),
 
-    Page("Quick Scrollbar", const QuickScrollbarRoute(),padding: false),
+    Page("Quick Scrollbar", const QuickScrollbarRoute(), padding: false),
     Page("Swiper", const SwiperRoute()),
     Page("Swiper Style", const SwiperStyleRoute()),
     Page("ScaleView", const ScaleViewRoute(), padding: false),
@@ -137,7 +135,6 @@ List<Page> getRoutes(){
     // Page("AzListView", (ctx) => QuickSelectListViewRoute()),
   ];
 }
-
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
