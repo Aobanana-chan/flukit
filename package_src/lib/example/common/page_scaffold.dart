@@ -102,14 +102,14 @@ class Page {
         body: widget,
       );
       widget = LogListenerScope(
-        child: widget,
         logEmitter: getGlobalLogEmitter(),
+        child: widget,
       );
     } else if (showLog) {
       widget = VerticalLogPanel(child: widget);
       widget = LogListenerScope(
-        child: widget,
         logEmitter: getGlobalLogEmitter(),
+        child: widget,
       );
     }
     return widget;

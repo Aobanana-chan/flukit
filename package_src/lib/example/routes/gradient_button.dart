@@ -10,40 +10,40 @@ class GradientButtonRoute extends StatelessWidget {
       children: <Widget>[
         GradientButton(
           colors: const [Colors.orange, Colors.red],
-          child: const Text("Submit"),
           onPressed: onTap,
+          child: const Text("Submit"),
         ),
         ElevatedGradientButton(
           colors: const [Colors.orange, Colors.red],
-          child: const Text("Submit"),
           onPressed: onTap,
+          child: const Text("Submit"),
         ),
         GradientButton(
-          child: const Text("Submit"),
           onPressed: onTap,
           borderRadius: BorderRadius.circular(30),
+          child: const Text("Submit"),
         ),
         ElevatedGradientButton(
-          child: const Text("Submit"),
           onPressed: onTap,
           borderRadius: BorderRadius.circular(30),
+          child: const Text("Submit"),
         ),
         SizedBox(
           width: double.infinity,
           height: 48,
-          child:  GradientButton(
+          child: GradientButton(
             colors: [Colors.lightGreen, Colors.green.shade700],
-            child: const Text("Submit"),
             onPressed: onTap,
+            child: const Text("Submit"),
           ),
         ),
         SizedBox(
           width: double.infinity,
           height: 48,
-          child:  ElevatedGradientButton(
+          child: ElevatedGradientButton(
             colors: [Colors.lightGreen, Colors.green.shade700],
-            child: const Text("Submit"),
             onPressed: onTap,
+            child: const Text("Submit"),
           ),
         ),
         const ElevatedGradientButton(

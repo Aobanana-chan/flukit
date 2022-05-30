@@ -21,9 +21,9 @@ class ScaleViewRoute extends StatelessWidget {
       ].map((v) {
         // 支持双击、缩放手势
         return ScaleView(
-          child: v,
           minScale: .5,
           maxScale: 5,
+          child: v,
         );
       }).toList(),
     );

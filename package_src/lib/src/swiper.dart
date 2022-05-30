@@ -169,6 +169,7 @@ class _SwiperIndicator implements SwiperIndicator {
   Widget build(BuildContext context, int index, int itemCount) {
     if (itemCount == 1) return const SizedBox(width: .0, height: .0);
 
+    // ignore: no_leading_underscores_for_local_identifiers
     var children = List.generate(itemCount, (_index) {
       Color color = itemColor;
       if (_index == index) {

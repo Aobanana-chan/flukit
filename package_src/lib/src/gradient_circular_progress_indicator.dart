@@ -1,3 +1,5 @@
+// ignore_for_file: no_leading_underscores_for_local_identifiers
+
 import 'dart:math';
 import 'package:flutter/material.dart';
 
@@ -105,6 +107,7 @@ class _GradientCircularProgressPainter extends CustomPainter {
     this.radius,
     this.total = 2 * pi,
     required this.colors,
+    // ignore: unused_element
     this.stops,
     this.value,
     this.fullColor,

@@ -1,3 +1,5 @@
+// ignore_for_file: no_leading_underscores_for_local_identifiers
+
 import 'package:flutter/material.dart';
 
 class GradientButton extends StatelessWidget {
@@ -59,6 +61,8 @@ class GradientButton extends StatelessWidget {
               child: DefaultTextStyle(
                 style: const TextStyle(fontWeight: FontWeight.bold),
                 child: Center(
+                  widthFactor: 1,
+                  heightFactor: 1,
                   child: DefaultTextStyle(
                     style: theme.textTheme.button!.copyWith(
                       color: disabled
@@ -67,8 +71,6 @@ class GradientButton extends StatelessWidget {
                     ),
                     child: child,
                   ),
-                  widthFactor: 1,
-                  heightFactor: 1,
                 ),
               ),
             ),

@@ -59,6 +59,7 @@ class SliverHeaderDelegate extends SliverPersistentHeaderDelegate {
   double get minExtent => minHeight;
 
   @override
+  // ignore: avoid_renaming_method_parameters
   bool shouldRebuild(SliverHeaderDelegate old) {
     return old.maxExtent != maxExtent || old.minExtent != minExtent;
   }

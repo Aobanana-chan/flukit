@@ -1,3 +1,5 @@
+// ignore_for_file: sort_child_properties_last
+
 import 'package:flukit/flukit.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +24,7 @@ class _SlideTransitionXRouteState extends State<SlideTransitionXRoute> {
           children: [
             ClipRect(child: wSwitcher(_score1)),
             const Padding(
-              padding: EdgeInsets.fromLTRB(10,0,10,5),
+              padding: EdgeInsets.fromLTRB(10, 0, 10, 5),
               child: Text(':', textScaleFactor: 2),
             ),
             ClipRect(child: wSwitcher(_score2)),
@@ -56,9 +58,9 @@ class _SlideTransitionXRouteState extends State<SlideTransitionXRoute> {
           duration: const Duration(milliseconds: 400),
           transitionBuilder: (Widget child, Animation<double> animation) {
             return SlideTransitionX(
-              child: FadeTransition(child: child, opacity: animation),
               direction: AxisDirection.down,
               position: animation,
+              child: FadeTransition(child: child, opacity: animation),
             );
           },
           child: Text(
@@ -71,4 +73,3 @@ class _SlideTransitionXRouteState extends State<SlideTransitionXRoute> {
     );
   }
 }
-

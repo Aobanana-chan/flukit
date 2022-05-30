@@ -265,6 +265,7 @@ class _ScaleViewState extends State<ScaleView>
           transform: Matrix4.identity()
             ..translate(_offset.dx, _offset.dy)
             ..scale(_scale),
+          // ignore: no_leading_underscores_for_local_identifiers
           child: Builder(builder: (_context) {
             return AfterLayout(
               callback: (ral) {

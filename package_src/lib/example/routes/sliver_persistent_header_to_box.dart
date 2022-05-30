@@ -26,9 +26,9 @@ class SliverPersistentHeaderToBoxRoute extends StatelessWidget {
     var theme = Theme.of(context);
     return Material(
       color: fixed ? Colors.white : theme.canvasColor,
-      child: wTitle('Title 1'),
       elevation: fixed ? 4 : 0,
       shadowColor: theme.appBarTheme.shadowColor,
+      child: wTitle('Title 1'),
     );
   }
 

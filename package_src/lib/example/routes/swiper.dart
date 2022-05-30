@@ -25,8 +25,8 @@ class SwiperRoute extends StatelessWidget {
                 onChanged: (index) => debugPrint('$index'),
                 children: images
                     .map((e) => Padding(
-                        child: e,
-                        padding: const EdgeInsets.symmetric(horizontal: 1)))
+                        padding: const EdgeInsets.symmetric(horizontal: 1),
+                        child: e))
                     .toList(),
               ),
             ),
@@ -60,7 +60,7 @@ class SwiperRoute extends StatelessWidget {
             ),
           ]
               .map((e) => Padding(
-                  child: e, padding: const EdgeInsets.symmetric(vertical: 10)))
+                  padding: const EdgeInsets.symmetric(vertical: 10), child: e))
               .toList(),
         ),
       ),

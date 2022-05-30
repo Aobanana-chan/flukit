@@ -93,6 +93,7 @@ class _QuickScrollBarState extends State<QuickScrollbar>
               child: Padding(
                 padding: const EdgeInsets.only(right: 5.0),
                 child: FadeTransition(
+                  opacity: _animation,
                   child: Material(
                     color: const Color(0xffe8e8e8),
                     elevation: .8,
@@ -105,7 +106,6 @@ class _QuickScrollBarState extends State<QuickScrollbar>
                       ),
                     ),
                   ),
-                  opacity: _animation,
                 ),
               ),
               onVerticalDragStart: (details) => _timer?.cancel(),
